@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="gameContainer text-center flex flex-col items-center">
+      <canvas
+        id="gameBoard"
+        width="500"
+        height="500"
+        class="border-4 border-black mt-2"
+      >
+      </canvas>
+      <div id="score" class="score font-serif m-2 text-8xl">0</div>
+      <button
+        id="resetBtn"
+        class="font-serif text-2xl w-28 m-2 border-4 rounded-full bg-gray-100 border-black"
+      >
+        Reset
+      </button>
+      <h2 id="bestscore" class="hidden m-2"></h2>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>
